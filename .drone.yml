@@ -1,0 +1,7 @@
+pipeline:
+  build:
+    image: golang
+    commands:
+      - cd ./string_service
+      - go get
+      - go run main.go
