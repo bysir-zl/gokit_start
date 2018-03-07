@@ -10,6 +10,12 @@ pipeline:
       - pwd
       - go version
       - go build
+  docker:
+    image: docker
+    commands:
+        - echo $DOCKER_USERNAME
+        - echo $DOCKER_PASSWORD
+    secrets: [ docker_username, docker_password ]
 
   publish:
       image: plugins/docker
