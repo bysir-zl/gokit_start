@@ -3,10 +3,9 @@ workspace:
 
 pipeline:
   build:
-    image: golang:1.8.3-alpine
+    image: golang:1.9
     commands:
       - go env
       - pwd
-      - ls
       - go version
       - go build
