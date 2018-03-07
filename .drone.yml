@@ -3,4 +3,5 @@ pipeline:
     image: golang
     commands:
       - cd ./string_service
+      - go env
       - go build
