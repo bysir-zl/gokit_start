@@ -10,3 +10,12 @@ pipeline:
       - pwd
       - go version
       - go build
+
+  publish:
+      image: plugins/docker
+      registry: hub.docker.com
+      repo: bysir/golang_base
+      mirror: https://docker.mirrors.ustc.edu.cn
+      secrets: [ docker_username, docker_password ]
+      tags:
+        - latest
