@@ -4,4 +4,6 @@ pipeline:
     commands:
       - cd ./string_service
       - go env
+      - pwd
+      - go version
       - go build
