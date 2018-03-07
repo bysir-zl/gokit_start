@@ -13,9 +13,6 @@ pipeline:
 
   publish:
       image: plugins/docker
-      commands:
-        - echo $DOCKER_USERNAME
-        - echo $DOCKER_PASSWORD
       registry: hub.docker.com # 仓库
       repo: bysir/golang_base # docker仓库地址
       mirror: https://docker.mirrors.ustc.edu.cn
