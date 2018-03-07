@@ -20,4 +20,3 @@ pipeline:
       secrets: [ docker_username, docker_password ]
       tags:
         - latest
-
