@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: golang
+    image: golang:1.9
     commands:
       - cd ./string_service
       - go env
