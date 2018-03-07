@@ -6,5 +6,4 @@ pipeline:
   build:
     image: golang
     commands:
-      - cd ./string_service
       - go build
