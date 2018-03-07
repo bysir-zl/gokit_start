@@ -2,8 +2,8 @@ pipeline:
   build:
     image: golang:1.9
     commands:
-      - cd ./string_service
       - go env
       - pwd
+      - ls
       - go version
       - go build
