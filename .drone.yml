@@ -8,4 +8,3 @@ pipeline:
     commands:
       - cd ./string_service
       - go build
-
