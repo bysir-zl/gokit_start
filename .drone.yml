@@ -20,3 +20,13 @@ pipeline:
       secrets: [ docker_username, docker_password ]
       tags:
         - latest
+
+  deploy:
+      image: appleboy/drone-ssh
+      host: 47.96.129.228
+      username: root
+      secrets: [ ssh_password ]
+      script:
+        - cd /root/app
+        - docker-compose pull bysir/golang_base
+        - docker-compose up
