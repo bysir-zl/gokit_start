@@ -1,8 +1,7 @@
 FROM alpine:latest
 
-WORKDIR /
+COPY gokit_start /
 
-RUN pwd
-RUN ls
+WORKDIR /
 
 ENTRYPOINT ["./gokit_start"]
