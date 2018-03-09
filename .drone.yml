@@ -28,6 +28,7 @@ pipeline:
       port: 22
       secrets: [ ssh_password ,password]
       script:
+        - pwd
         - cd /root/app
         - docker-compose pull bysir/golang_base
         - docker-compose up
