@@ -31,3 +31,4 @@ pipeline:
         - cd /root/app
         - docker-compose pull bysir/golang_base
         - docker-compose up
+
