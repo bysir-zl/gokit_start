@@ -26,7 +26,7 @@ pipeline:
       host: 47.94.204.137
       username: root
       port: 22
-      secrets: [ ssh_password ]
+      secrets: [ ssh_key ]
       script:
         - cd /root/app
         - docker-compose pull bysir/golang_base
